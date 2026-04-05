@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Neil's Tech Services | CCTV & Security Camera Installation — Saint Lucia</title>
+<meta name="description" content="Professional CCTV, alarm systems, access control & smart security installation across Saint Lucia. No monthly fees. Island-wide service. Call (758) 518-2570.">
+<meta name="keywords" content="CCTV installation Saint Lucia, security camera Castries, alarm system Choiseul, access control Saint Lucia, CCTV installer, home security Saint Lucia, business security camera, Neil's Tech Services">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Neil's Tech Services | Security Camera Installation Saint Lucia">
+<meta property="og:description" content="Professional CCTV, alarms & access control. Island-wide. No monthly fees. Get a free quote on WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d1b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   DESIGN SYSTEM — NEIL'S TECH SERVICES
+   Palette derived from logo: Steel Navy · Electric Teal · Amber Gold · White
+   ============================================================ */
+:root {
+  --navy:        #0d1b2e;
+  --navy-mid:    #152540;
+  --navy-card:   #1a2f4a;
+  --teal:        #00c2d1;
+  --teal-dim:    #009baa;
+  --amber:       #f59e0b;
+  --amber-dim:   #d97706;
+  --orange-logo: #f97316;
+  --white:       #ffffff;
+  --off-white:   #e8f4f8;
+  --text-muted:  #94b8cc;
+  --border:      rgba(0,194,209,0.15);
+  --glow:        rgba(0,194,209,0.25);
+  --shadow:      0 20px 60px rgba(0,0,0,0.5);
+  --radius:      12px;
+  --wa-green:    #25D366;
+}
+
+[data-theme="light"] {
+  --bg-page:    #f0f6fa;
+  --bg-hero:    #0d1b2e;
+  --bg-section: #ffffff;
+  --bg-card:    #ffffff;
+  --bg-card2:   #eaf4f8;
+  --text-main:  #0d1b2e;
+  --text-body:  #2e4a60;
+  --text-muted: #5a7a90;
+  --border:     rgba(13,27,46,0.1);
+  --section-alt:#e8f4f8;
+}
+
+[data-theme="dark"] {
+  --bg-page:    #070e18;
+  --bg-hero:    #050c15;
+  --bg-section: #0d1b2e;
+  --bg-card:    #1a2f4a;
+  --bg-card2:   #152540;
+  --text-main:  #ffffff;
+  --text-body:  #c8dde8;
+  --text-muted: #94b8cc;
+  --border:     rgba(0,194,209,0.15);
+  --section-alt:#0a1525;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-page);
+  color: var(--text-main);
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ── SCAN-LINE OVERLAY ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,194,209,0.012) 2px,
+    rgba(0,194,209,0.012) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 24px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(7,14,24,0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0,194,209,0.2);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--teal);
+  object-fit: cover;
+  filter: drop-shadow(0 0 8px rgba(0,194,209,0.5));
+}
+
+.nav-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.nav-name span { color: var(--teal); }
+.nav-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  color: var(--amber);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+@media(max-width:640px){ .nav-links { display:none; } }
+
+/* ── THEME TOGGLE ── */
+.theme-toggle {
+  width: 50px;
+  height: 26px;
+  background: rgba(0,194,209,0.2);
+  border: 1px solid rgba(0,194,209,0.4);
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.theme-toggle::after {
+  content: '☀️';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  transition: left 0.3s, background 0.3s;
+}
+
+[data-theme="dark"] .theme-toggle::after {
+  content: '🌙';
+  left: 26px;
+  background: var(--amber);
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--bg-hero);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+/* animated camera grid bg */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(0,194,209,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(245,158,11,0.05) 0%, transparent 60%);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,194,209,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,194,209,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+}
+
+/* camera HUD corners */
+.hud-corner {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+}
+
+.hud-corner--tl { top: 15%; left: 10%; border-top: 2px solid var(--teal); border-left: 2px solid var(--teal); }
+.hud-corner--tr { top: 15%; right: 10%; border-top: 2px solid var(--teal); border-right: 2px solid var(--teal); }
+.hud-corner--bl { bottom: 20%; left: 10%; border-bottom: 2px solid var(--teal); border-left: 2px solid var(--teal); }
+.hud-corner--br { bottom: 20%; right: 10%; border-bottom: 2px solid var(--teal); border-right: 2px solid var(--teal); }
+
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+.rec-dot {
+  position: absolute;
+  top: 18%; right: 11%;
+  width: 10px; height: 10px;
+  background: #ef4444;
+  border-radius: 50%;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  box-shadow: 0 0 10px #ef4444;
+}
+
+.rec-label {
+  position: absolute;
+  top: 18%; right: 13%;
+  color: #ef4444;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media(max-width:768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,194,209,0.12);
+  border: 1px solid rgba(0,194,209,0.35);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.hero h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero h1 .accent { color: var(--teal); }
+.hero h1 .amber-accent { color: var(--amber); }
+
+.hero-sub {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+@media(max-width:768px) { .hero-sub { margin: 0 auto 36px; } }
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media(max-width:768px) { .hero-actions { justify-content: center; } }
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--wa-green), #1da851);
+  color: white;
+  padding: 16px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37,211,102,0.5);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--teal);
+  background: rgba(0,194,209,0.08);
+}
+
+/* Hero right: camera monitor mockup */
+.hero-visual {
+  position: relative;
+}
+
+.monitor-frame {
+  background: linear-gradient(145deg, #1a2f4a, #0d1b2e);
+  border: 2px solid rgba(0,194,209,0.3);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 40px rgba(0,194,209,0.1);
+  position: relative;
+}
+
+.monitor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,194,209,0.15);
+}
+
+.monitor-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  color: var(--teal);
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.monitor-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #4ade80;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.cam-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cam-feed {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16/10;
+  background: #060f1c;
+}
+
+.cam-feed.large {
+  grid-column: span 2;
+  aspect-ratio: 16/7;
+}
+
+.cam-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,194,209,0.04) 0%, transparent 50%);
+}
+
+.cam-label {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 9px;
+  color: rgba(0,194,209,0.9);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  background: rgba(0,0,0,0.5);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.cam-timestamp {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 8px;
+  color: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.4);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Animated scan line for camera feeds */
+@keyframes scanline {
+  0% { top: -4px; }
+  100% { top: 100%; }
+}
+
+.cam-scan {
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,194,209,0.4), transparent);
+  animation: scanline 3s linear infinite;
+}
+
+/* SVG camera icons in feeds */
+.cam-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+}
+
+/* ── TRUST TICKER ── */
+.ticker-bar {
+  background: var(--navy);
+  border-top: 1px solid rgba(0,194,209,0.2);
+  border-bottom: 1px solid rgba(0,194,209,0.2);
+  overflow: hidden;
+  padding: 12px 0;
+  white-space: nowrap;
+}
+
+.ticker-inner {
+  display: inline-flex;
+  gap: 0;
+  animation: ticker 22s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 40px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ticker-item::after {
+  content: '◆';
+  color: var(--teal);
+  font-size: 8px;
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: 90px 24px;
+}
+
+.section-alt {
+  background: var(--section-alt);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.section-title .accent { color: var(--teal); }
+.section-title .amber { color: var(--amber); }
+
+.section-body {
+  font-size: 16px;
+  color: var(--text-body);
+  line-height: 1.65;
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+
+/* ── WHY US — trust stats ── */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.trust-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.trust-stat:hover {
+  border-color: var(--teal);
+  transform: translateY(-4px);
+}
+
+.trust-stat .number {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.trust-stat .label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.reason-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.reason-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: border-color 0.3s;
+}
+
+.reason-item:hover { border-color: var(--teal); }
+
+.reason-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(0,194,209,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,194,209,0.2);
+}
+
+.reason-text h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.reason-text p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── SERVICES ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0,194,209,0.3);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.service-card h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.service-tag {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ── FEATURED PRODUCT ── */
+.product-section {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,194,209,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.product-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media(max-width:768px) { .product-inner { grid-template-columns: 1fr; } }
+
+.product-badge-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,158,11,0.15);
+  border: 1px solid rgba(245,158,11,0.4);
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: var(--amber);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+}
+
+.feature-list li::before {
+  content: '✓';
+  width: 22px;
+  height: 22px;
+  background: rgba(0,194,209,0.15);
+  border: 1px solid var(--teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--teal);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.doorbell-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.doorbell-mockup {
+  width: 200px;
+  background: linear-gradient(145deg, #1a2f4a, #0d1b2e);
+  border: 2px solid rgba(0,194,209,0.3);
+  border-radius: 30px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(0,194,209,0.15);
+}
+
+.doorbell-lens {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #1e3a5f, #060f1c);
+  border: 3px solid rgba(0,194,209,0.4);
+  margin: 0 auto 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,194,209,0.2), inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.doorbell-lens::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 30%;
+  height: 30%;
+  background: rgba(255,255,255,0.07);
+  border-radius: 50%;
+}
+
+.doorbell-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  color: var(--teal);
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.doorbell-model {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+/* ── PROOF / CAROUSEL ── */
+.carousel-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-slide {
+  min-width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Placeholder for real work photos — styled camera-feed look */
+.slide-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Rajdhani', sans-serif;
+  color: rgba(0,194,209,0.3);
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(0,194,209,0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #0d1b2e, #070e18);
+  position: relative;
+}
+
+.slide-placeholder picture,
+.slide-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.slide-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.slide-tag {
+  font-size: 11px;
+  color: var(--teal);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(13,27,46,0.85);
+  border: 1px solid rgba(0,194,209,0.3);
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,194,209,0.2);
+  border-color: var(--teal);
+}
+
+.carousel-btn--prev { left: 12px; }
+.carousel-btn--next { right: 12px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0,194,209,0.2);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  border: 1px solid rgba(0,194,209,0.3);
+}
+
+.carousel-dot.active {
+  background: var(--teal);
+  transform: scale(1.3);
+}
+
+/* ── WHATSAPP SCRIPT SECTION ── */
+.quote-section {
+  background: linear-gradient(135deg, #0d1b2e, #152540);
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-section::after {
+  content: '🔒';
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 200px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.quote-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media(max-width:768px) { .quote-inner { grid-template-columns: 1fr; } }
+
+.quote-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quote-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,194,209,0.12);
+  border: 1px solid rgba(0,194,209,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.step-text h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.step-text p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+/* WA chat bubble */
+.wa-chat {
+  background: #0b1e12;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(37,211,102,0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.wa-chat-header {
+  background: #1f2d23;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(37,211,102,0.15);
+}
+
+.wa-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #1da851);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.wa-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.wa-status {
+  font-size: 11px;
+  color: #25D366;
+}
+
+.wa-messages {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0d1a10;
+  min-height: 240px;
+}
+
+.wa-bubble {
+  max-width: 85%;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.wa-bubble.received {
+  background: #1f2d23;
+  color: rgba(255,255,255,0.85);
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+}
+
+.wa-bubble.sent {
+  background: #005c4b;
+  color: rgba(255,255,255,0.9);
+  border-bottom-right-radius: 4px;
+  align-self: flex-end;
+  position: relative;
+}
+
+.wa-time {
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  text-align: right;
+  margin-top: 3px;
+}
+
+.wa-cta-row {
+  padding: 14px 16px;
+  background: #1f2d23;
+}
+
+.wa-cta-btn {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, var(--wa-green), #1da851);
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+.wa-cta-btn:hover { opacity: 0.9; }
+
+/* ── COVERAGE MAP ── */
+.coverage-section {
+  background: var(--bg-section);
+}
+
+.coverage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.coverage-chip {
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 14px;
+  color: var(--text-body);
+  font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.coverage-chip::before { content: '📍'; font-size: 12px; }
+.coverage-chip:hover { border-color: var(--teal); color: var(--teal); }
+
+/* ── FINAL CTA ── */
+.final-cta {
+  background: linear-gradient(135deg, #050c15 0%, #0d1b2e 50%, #152540 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(0,194,209,0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(245,158,11,0.05) 0%, transparent 60%);
+}
+
+.final-cta-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(30px, 5vw, 56px);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 40px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-teal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--teal);
+  color: var(--navy);
+  padding: 16px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-teal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,194,209,0.4);
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: #040a12;
+  padding: 40px 24px 60px;
+  text-align: center;
+  border-top: 1px solid rgba(0,194,209,0.12);
+}
+
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,194,209,0.4);
+}
+
+.footer-brand {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-brand span { color: var(--teal); }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--teal); }
+
+.footer-contact {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+
+.footer-contact a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+.footer-legal {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  margin-top: 16px;
+}
+
+/* ── WHATSAPP FAB ── */
+.wa-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 998;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--wa-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wa-fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37,211,102,0.65);
+}
+
+.wa-fab svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.wa-fab-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(37,211,102,0.5);
+  animation: fab-pulse 2.5s ease-out infinite;
+}
+
+@keyframes fab-pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* ── ENTRANCE ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.6s; }
+
+/* Scroll-triggered */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── LIVE BADGE ── */
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(239,68,68,0.12);
+  border: 1px solid rgba(239,68,68,0.35);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ef4444;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.live-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ef4444;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+/* ── HORIZONTAL RULE ── */
+.teal-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  margin: 0;
+  opacity: 0.3;
+}
+
+/* mobile scroll fix */
+html, body {
+  max-width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+<nav class="navbar">
+  <a class="nav-brand" href="#home">
+    <!-- Logo circle — white circle with icon -->
+    <div style="width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid rgba(0,194,209,0.6);display:flex;align-items:center;justify-content:center;overflow:hidden;filter:drop-shadow(0 0 8px rgba(0,194,209,0.5));">
+      <svg viewBox="0 0 80 80" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
+        <!-- monitor -->
+        <rect x="10" y="22" width="60" height="36" rx="4" fill="#1e88e5" stroke="#0d1b2e" stroke-width="1"/>
+        <rect x="14" y="26" width="52" height="26" rx="2" fill="#0d1b2e"/>
+        <!-- circuit lines on screen -->
+        <line x1="20" y1="36" x2="35" y2="36" stroke="#00c2d1" stroke-width="1.5"/>
+        <line x1="35" y1="36" x2="35" y2="30" stroke="#00c2d1" stroke-width="1.5"/>
+        <line x1="35" y1="30" x2="48" y2="30" stroke="#00c2d1" stroke-width="1.5"/>
+        <circle cx="35" cy="36" r="2" fill="#00c2d1"/>
+        <circle cx="48" cy="30" r="2" fill="#00c2d1"/>
+        <!-- phone -->
+        <rect x="28" y="32" width="14" height="18" rx="2" fill="#f97316" stroke="#0d1b2e" stroke-width="0.5"/>
+        <rect x="30" y="34" width="10" height="12" rx="1" fill="#0d1b2e"/>
+        <!-- gear -->
+        <circle cx="56" cy="42" r="7" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+        <circle cx="56" cy="42" r="3" fill="#f59e0b"/>
+        <!-- stand -->
+        <rect x="36" y="58" width="8" height="5" rx="1" fill="#1e88e5"/>
+        <rect x="30" y="63" width="20" height="2" rx="1" fill="#1e88e5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="nav-name">Neil's <span>Tech</span> Services</div>
+      <div class="nav-sub">Security Specialists</div>
+    </div>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#quote">Get Quote</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hud-corner hud-corner--tl"></div>
+  <div class="hud-corner hud-corner--tr"></div>
+  <div class="hud-corner hud-corner--bl"></div>
+  <div class="hud-corner hud-corner--br"></div>
+  <div class="rec-label">REC</div>
+  <div class="rec-dot"></div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge fade-up">🔒 Professional Security Installation</div>
+      <h1 class="fade-up delay-1">
+        Protect What <span class="accent">Matters</span><br>
+        Most to <span class="amber-accent">You.</span>
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        CCTV cameras, alarm systems, door access control & device repairs — installed professionally across Saint Lucia. <strong style="color:rgba(255,255,255,0.85);">No monthly fees. Remote access included.</strong>
+      </p>
+      <div class="hero-actions fade-up delay-3">
+        <a class="btn-primary" href="https://wa.me/17585182570?text=Hi%2C%20I%20want%20a%20quote%20for%20a%20security%20system." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Get Free Quote
+        </a>
+        <a class="btn-secondary" href="#services">
+          View Services ↓
+        </a>
+      </div>
+      <div class="fade-up delay-4" style="margin-top:28px;">
+        <span class="live-badge">Live Monitoring Systems Available</span>
+      </div>
+    </div>
+
+    <!-- Camera monitor mockup -->
+    <div class="hero-visual fade-up delay-3">
+      <div class="monitor-frame">
+        <div class="monitor-header">
+          <span class="monitor-title">NEIL'S TECH — LIVE FEED</span>
+          <span class="monitor-status"><span class="status-dot"></span>ONLINE</span>
+        </div>
+        <div class="cam-grid">
+
+          <div class="cam-feed large">
+            <div class="cam-scan"></div>
+            <div class="cam-overlay"></div>
+            <svg class="cam-icon" width="48" height="48" viewBox="0 0 24 24" fill="rgba(0,194,209,0.5)">
+              <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+            </svg>
+            <!-- grid crosshair -->
+            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.12" viewBox="0 0 400 220" preserveAspectRatio="none">
+              <line x1="200" y1="0" x2="200" y2="220" stroke="#00c2d1" stroke-width="0.5"/>
+              <line x1="0" y1="110" x2="400" y2="110" stroke="#00c2d1" stroke-width="0.5"/>
+              <circle cx="200" cy="110" r="30" stroke="#00c2d1" stroke-width="0.5" fill="none"/>
+              <circle cx="200" cy="110" r="5" stroke="#00c2d1" stroke-width="1" fill="none"/>
+            </svg>
+            <div class="cam-label">CAM 01 · FRONT GATE</div>
+            <div class="cam-timestamp">04:53:22</div>
+          </div>
+
+          <div class="cam-feed">
+            <div class="cam-overlay"></div>
+            <svg class="cam-icon" width="30" height="30" viewBox="0 0 24 24" fill="rgba(0,194,209,0.4)">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <div class="cam-label">CAM 02 · SIDE</div>
+            <div class="cam-timestamp">04:53:22</div>
+          </div>
+
+          <div class="cam-feed">
+            <div class="cam-overlay"></div>
+            <svg class="cam-icon" width="30" height="30" viewBox="0 0 24 24" fill="rgba(245,158,11,0.3)">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+            </svg>
+            <div class="cam-label">CAM 03 · BACK</div>
+            <div class="cam-timestamp">04:53:22</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <span class="ticker-item">✦ Professional CCTV Installation</span>
+    <span class="ticker-item">Island-Wide Saint Lucia Coverage</span>
+    <span class="ticker-item">No Monthly Fees</span>
+    <span class="ticker-item">Remote Phone Access</span>
+    <span class="ticker-item">Alarm Systems</span>
+    <span class="ticker-item">Door Access Control</span>
+    <span class="ticker-item">Smart TV Repairs</span>
+    <span class="ticker-item">Tiling Services</span>
+    <span class="ticker-item">✦ Professional CCTV Installation</span>
+    <span class="ticker-item">Island-Wide Saint Lucia Coverage</span>
+    <span class="ticker-item">No Monthly Fees</span>
+    <span class="ticker-item">Remote Phone Access</span>
+    <span class="ticker-item">Alarm Systems</span>
+    <span class="ticker-item">Door Access Control</span>
+    <span class="ticker-item">Smart TV Repairs</span>
+    <span class="ticker-item">Tiling Services</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     WHY US
+═══════════════════════════════════════════ -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-title">Saint Lucia's Trusted <span class="accent">Security Experts</span></h2>
+      <p class="section-body">A professional home & security company which provides one of the best in quality installation services for CCTV, Alarms, Door access & handheld repair — serving Choiseul, Castries, and island-wide.</p>
+    </div>
+
+    <div class="trust-grid reveal">
+      <div class="trust-stat">
+        <div class="number">4K</div>
+        <div class="label">Ultra-HD Camera Systems</div>
+      </div>
+      <div class="trust-stat">
+        <div class="number">0</div>
+        <div class="label">Monthly Fees Options</div>
+      </div>
+      <div class="trust-stat">
+        <div class="number">24/7</div>
+        <div class="label">Remote Monitoring Access</div>
+      </div>
+      <div class="trust-stat">
+        <div class="number">🌴</div>
+        <div class="label">Island-Wide Service</div>
+      </div>
+    </div>
+
+    <div class="reason-list reveal">
+      <div class="reason-item">
+        <div class="reason-icon">🔧</div>
+        <div class="reason-text">
+          <h4>Clean, Professional Installations</h4>
+          <p>Neat cable management, proper mounting — every installation looks built-in and polished.</p>
+        </div>
+      </div>
+      <div class="reason-item">
+        <div class="reason-icon">📱</div>
+        <div class="reason-text">
+          <h4>Reliable Systems with Remote Access</h4>
+          <p>View your cameras live from your phone anywhere in the world — anytime.</p>
+        </div>
+      </div>
+      <div class="reason-item">
+        <div class="reason-icon">💰</div>
+        <div class="reason-text">
+          <h4>No Monthly Fees Options Available</h4>
+          <p>Own your system outright with local storage — no recurring subscription costs.</p>
+        </div>
+      </div>
+      <div class="reason-item">
+        <div class="reason-icon">🌍</div>
+        <div class="reason-text">
+          <h4>Island-Wide Service</h4>
+          <p>Serving homes and businesses across all of Saint Lucia — wherever you are.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">What We Install</div>
+      <h2 class="section-title">Core <span class="accent">Services</span></h2>
+      <p class="section-body">From residential CCTV to commercial alarm systems — we handle everything from survey to installation to aftercare.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <span class="service-icon">📹</span>
+        <h3>Security Systems</h3>
+        <p>CCTV cameras, alarm systems, remote monitoring, video doorbells. HD to 4K resolution. Night vision. AI motion detection.</p>
+        <span class="service-tag">→ Most Popular</span>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🚪</span>
+        <h3>Access & Networking</h3>
+        <p>Door access control, structured cabling, rack installations. Secure your entry points with smart card or PIN access.</p>
+        <span class="service-tag">→ Commercial & Home</span>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🔧</span>
+        <h3>Device Repairs</h3>
+        <p>TVs, phones, tablets, and computers. Fast turnaround, honest diagnosis, quality parts.</p>
+        <span class="service-tag">→ Quick Turnaround</span>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🏠</span>
+        <h3>Home Services</h3>
+        <p>Tiling and finishing work. Precision installation from a team that respects your property.</p>
+        <span class="service-tag">→ Quality Finish</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     FEATURED PRODUCT
+═══════════════════════════════════════════ -->
+<section class="section product-section">
+  <div class="container">
+    <div class="product-inner">
+      <div class="reveal">
+        <div class="section-tag">Featured Installation</div>
+        <h2 class="section-title" style="color:white;">Video <span class="accent">Doorbell</span> System</h2>
+        <div class="product-badge-price">
+          💲 From $400 Installed
+        </div>
+        <ul class="feature-list">
+          <li>5MP High-Definition Camera</li>
+          <li>2-Way Audio Talk System</li>
+          <li>160° Wide-Angle View</li>
+          <li>No Monthly Fees — Ever</li>
+          <li>Mobile App Remote Access</li>
+          <li>Night Vision Included</li>
+          <li>Motion Detection Alerts</li>
+        </ul>
+        <a class="btn-primary" href="https://wa.me/17585182570?text=Hi%2C%20I%27m%20interested%20in%20the%20video%20doorbell%20system.%20Can%20I%20get%20a%20quote%3F" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enquire on WhatsApp
+        </a>
+      </div>
+
+      <div class="reveal doorbell-visual">
+        <div class="doorbell-mockup">
+          <div class="doorbell-label">5MP · NIGHT VISION</div>
+          <div class="doorbell-lens">
+            <div class="cam-scan" style="animation-duration:4s;"></div>
+          </div>
+          <div class="doorbell-model">Video Doorbell</div>
+          <div style="margin-top:12px;font-size:11px;color:rgba(0,194,209,0.6);letter-spacing:1px;">Wide Angle · 2-Way Talk</div>
+          <div style="margin-top:10px;display:flex;justify-content:center;gap:8px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pulse-dot 2s infinite;"></div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.4);font-family:'Rajdhani',sans-serif;letter-spacing:1px;">LIVE</div>
+          </div>
+        </div>
+        <!-- glow ring -->
+        <div style="position:absolute;inset:-20px;border-radius:50%;border:1px solid rgba(0,194,209,0.08);pointer-events:none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     RECENT WORK — CAROUSEL
+═══════════════════════════════════════════ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Portfolio</div>
+      <h2 class="section-title">Recent <span class="accent">Installations</span></h2>
+      <p class="section-body">Real installations across homes and businesses in Saint Lucia — clean, professional, and built to last.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="carousel-wrap">
+        <div class="carousel-track" id="carouselTrack">
+
+          <!-- SLIDE 1 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">
+              <picture>
+                <!-- Clients can replace src with real photos -->
+                <source srcset="image1.webp" type="image/webp">
+                <img src="image1.jpg" alt="CCTV installation Saint Lucia - outdoor camera" onerror="this.style.display='none'">
+              </picture>
+              <!-- Fallback design if no images yet -->
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(0,194,209,0.2)">
+                <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+              </svg>
+              <span style="font-size:11px;">CCTV · OUTDOOR INSTALL</span>
+            </div>
+            <div class="slide-info">
+              <div>
+                <div class="slide-title">Outdoor CCTV System</div>
+                <div class="slide-tag">Residential · Saint Lucia</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">
+              <picture>
+                <source srcset="image2.webp" type="image/webp">
+                <img src="image2.jpg" alt="Network rack installation Saint Lucia" onerror="this.style.display='none'">
+              </picture>
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(0,194,209,0.2)">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+              </svg>
+              <span style="font-size:11px;">SERVER · RACK INSTALL</span>
+            </div>
+            <div class="slide-info">
+              <div>
+                <div class="slide-title">Network Rack Installation</div>
+                <div class="slide-tag">Commercial · Structured Cabling</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">
+              <picture>
+                <source srcset="image3.webp" type="image/webp">
+                <img src="image3.jpg" alt="Tablet and phone repairs Saint Lucia" onerror="this.style.display='none'">
+              </picture>
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(249,115,22,0.2)">
+                <path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zM11.5 23c-.83 0-1.5-.67-1.5-1.5S10.67 20 11.5 20s1.5.67 1.5 1.5S12.33 23 11.5 23zM19 18H4V3h15v15z"/>
+              </svg>
+              <span style="font-size:11px;">DEVICE · REPAIRS</span>
+            </div>
+            <div class="slide-info">
+              <div>
+                <div class="slide-title">Device Repair Services</div>
+                <div class="slide-tag">Phones · Tablets · Smart TVs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">
+              <picture>
+                <source srcset="image4.webp" type="image/webp">
+                <img src="image4.jpg" alt="Tiling services Saint Lucia" onerror="this.style.display='none'">
+              </picture>
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(245,158,11,0.2)">
+                <path d="M21 3H3v18h18V3zm-10 8H5V5h6v6zm0 8H5v-6h6v6zm8 0h-6v-6h6v6zm0-8h-6V5h6v6z"/>
+              </svg>
+              <span style="font-size:11px;">HOME · TILING</span>
+            </div>
+            <div class="slide-info">
+              <div>
+                <div class="slide-title">Professional Tiling</div>
+                <div class="slide-tag">Home Services · Saint Lucia</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn carousel-btn--prev" id="prevBtn">&#8592;</button>
+        <button class="carousel-btn carousel-btn--next" id="nextBtn">&#8594;</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots">
+        <div class="carousel-dot active" data-index="0"></div>
+        <div class="carousel-dot" data-index="1"></div>
+        <div class="carousel-dot" data-index="2"></div>
+        <div class="carousel-dot" data-index="3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     WHATSAPP QUOTE SECTION
+═══════════════════════════════════════════ -->
+<section class="section quote-section" id="quote">
+  <div class="container">
+    <div class="quote-inner">
+      <div class="reveal">
+        <div class="section-tag" style="color:var(--wa-green);">WhatsApp Quote System</div>
+        <h2 class="section-title" style="color:white;">Get Your <span style="color:var(--wa-green);">Free Quote</span><br>in Minutes</h2>
+        <p class="section-body" style="color:rgba(255,255,255,0.6);">Message us on WhatsApp and we'll respond fast with an accurate, no-obligation quote. Here's how it works:</p>
+
+        <div class="quote-steps">
+          <div class="quote-step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Send Us a Message</h4>
+              <p>Tap the button. We'll reply with our standard greeting.</p>
+            </div>
+          </div>
+          <div class="quote-step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>We Ask 3 Quick Questions</h4>
+              <p>Location? House or business? How many cameras or full system?</p>
+            </div>
+          </div>
+          <div class="quote-step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <h4>You Get an Accurate Quote</h4>
+              <p>Basic installs usually start from $XXX depending on setup. No surprises.</p>
+            </div>
+          </div>
+          <div class="quote-step">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <h4>We Schedule a Site Visit</h4>
+              <p>A quick visit to finalize everything. Installation follows shortly after.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <p style="font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;margin-bottom:8px;">💡 We also offer systems with no monthly fees.</p>
+        </div>
+      </div>
+
+      <!-- WA Chat bubble UI -->
+      <div class="reveal">
+        <div class="wa-chat">
+          <div class="wa-chat-header">
+            <div class="wa-avatar">🔒</div>
+            <div>
+              <div class="wa-name">Neil's Tech Services</div>
+              <div class="wa-status">● Online</div>
+            </div>
+          </div>
+          <div class="wa-messages">
+
+            <div class="wa-bubble received">
+              Hi, thanks for reaching out! 👋<br><br>
+              To give you an accurate quote:<br>
+              — Location?<br>
+              — House or business?<br>
+              — How many cameras or full system?<br><br>
+              We also offer systems with <strong>no monthly fees.</strong>
+              <div class="wa-time">Now · Neil's Tech</div>
+            </div>
+
+            <div class="wa-bubble sent">
+              Hi! I'm in Castries, residential home, looking for 4 cameras.
+              <div class="wa-time">Just now · You ✓✓</div>
+            </div>
+
+            <div class="wa-bubble received">
+              Perfect! Basic installs usually start from <strong>$XXX</strong> depending on setup. 📸<br><br>
+              We can schedule a quick visit to finalize everything.
+              <div class="wa-time">Now · Neil's Tech</div>
+            </div>
+
+          </div>
+          <div class="wa-cta-row">
+            <a class="wa-cta-btn" href="https://wa.me/17585182570?text=Hi%2C%20I%20want%20a%20quote%20for%20a%20security%20system." target="_blank" rel="noopener">
+              💬 Start Chat — Get Your Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     COVERAGE
+═══════════════════════════════════════════ -->
+<section class="section coverage-section" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Service Areas</div>
+      <h2 class="section-title">We Cover All of <span class="accent">Saint Lucia</span></h2>
+      <p class="section-body">Island-wide coverage for both residential and commercial clients. Not sure if we cover your area? Just ask.</p>
+    </div>
+    <div class="coverage-grid reveal">
+      <div class="coverage-chip">Castries</div>
+      <div class="coverage-chip">Choiseul</div>
+      <div class="coverage-chip">Vieux Fort</div>
+      <div class="coverage-chip">Gros Islet</div>
+      <div class="coverage-chip">Soufrière</div>
+      <div class="coverage-chip">Micoud</div>
+      <div class="coverage-chip">Dennery</div>
+      <div class="coverage-chip">Anse La Raye</div>
+      <div class="coverage-chip">Canaries</div>
+      <div class="coverage-chip">Babonneau</div>
+      <div class="coverage-chip">+ All Districts</div>
+    </div>
+
+    <div class="reveal" style="margin-top:60px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
+          <div style="font-size:24px;margin-bottom:10px;">📞</div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Phone</div>
+          <a href="tel:+17585182570" style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--text-main);text-decoration:none;">(758) 518-2570</a>
+        </div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
+          <div style="font-size:24px;margin-bottom:10px;">📧</div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Email</div>
+          <a href="mailto:neilstechservices@gmail.com" style="font-size:14px;color:var(--text-main);text-decoration:none;word-break:break-all;">neilstechservices@gmail.com</a>
+        </div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
+          <div style="font-size:24px;margin-bottom:10px;">📸</div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Instagram</div>
+          <a href="https://www.instagram.com/neils_tech_services" target="_blank" rel="noopener" style="font-size:15px;color:var(--teal);text-decoration:none;font-weight:600;">@neils_tech_services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-rule"></div>
+
+<!-- ═══════════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════════ -->
+<section class="section final-cta">
+  <div class="container final-cta-inner">
+    <div class="reveal">
+      <!-- HUD corners on CTA -->
+      <div style="position:relative;display:inline-block;padding:40px;">
+        <div style="position:absolute;top:0;left:0;width:30px;height:30px;border-top:2px solid rgba(0,194,209,0.4);border-left:2px solid rgba(0,194,209,0.4);"></div>
+        <div style="position:absolute;top:0;right:0;width:30px;height:30px;border-top:2px solid rgba(0,194,209,0.4);border-right:2px solid rgba(0,194,209,0.4);"></div>
+        <div style="position:absolute;bottom:0;left:0;width:30px;height:30px;border-bottom:2px solid rgba(0,194,209,0.4);border-left:2px solid rgba(0,194,209,0.4);"></div>
+        <div style="position:absolute;bottom:0;right:0;width:30px;height:30px;border-bottom:2px solid rgba(0,194,209,0.4);border-right:2px solid rgba(0,194,209,0.4);"></div>
+        <h2>Ready to Secure<br>Your Property?</h2>
+      </div>
+      <p>Don't wait for an incident to happen. A professional security system is the smartest investment you can make for your home or business.</p>
+      <div class="cta-actions">
+        <a class="btn-primary" href="https://wa.me/17585182570?text=Hi%2C%20I%20need%20a%20security%20installation%20quote." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Message on WhatsApp
+        </a>
+        <a class="btn-teal" href="tel:+17585182570">
+          📞 Call (758) 518-2570
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-logo-wrap">
+    <div style="width:40px;height:40px;border-radius:50%;background:#fff;border:2px solid rgba(0,194,209,0.4);display:flex;align-items:center;justify-content:center;overflow:hidden;">
+      <svg viewBox="0 0 80 80" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="22" width="60" height="36" rx="4" fill="#1e88e5"/>
+        <rect x="14" y="26" width="52" height="26" rx="2" fill="#0d1b2e"/>
+        <line x1="20" y1="36" x2="35" y2="36" stroke="#00c2d1" stroke-width="1.5"/>
+        <line x1="35" y1="36" x2="35" y2="30" stroke="#00c2d1" stroke-width="1.5"/>
+        <line x1="35" y1="30" x2="48" y2="30" stroke="#00c2d1" stroke-width="1.5"/>
+        <circle cx="35" cy="36" r="2" fill="#00c2d1"/>
+        <circle cx="48" cy="30" r="2" fill="#00c2d1"/>
+        <rect x="28" y="32" width="14" height="18" rx="2" fill="#f97316"/>
+        <rect x="30" y="34" width="10" height="12" rx="1" fill="#0d1b2e"/>
+        <circle cx="56" cy="42" r="7" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+        <circle cx="56" cy="42" r="3" fill="#f59e0b"/>
+        <rect x="36" y="58" width="8" height="5" rx="1" fill="#1e88e5"/>
+        <rect x="30" y="63" width="20" height="2" rx="1" fill="#1e88e5"/>
+      </svg>
+    </div>
+    <div class="footer-brand">Neil's <span>Tech</span> Services</div>
+  </div>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#quote">Get Quote</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/neils_tech_services" target="_blank" rel="noopener">Instagram</a>
+  </div>
+
+  <p class="footer-contact">
+    📞 <a href="tel:+17585182570">(758) 518-2570</a> &nbsp;|&nbsp;
+    📧 <a href="mailto:neilstechservices@gmail.com">neilstechservices@gmail.com</a>
+  </p>
+  <p class="footer-contact">📍 Choiseul, Castries — Saint Lucia, W.I.</p>
+
+  <p class="footer-legal">© 2026 Neil's Tech Services. All rights reserved. Professional CCTV & Security Installation — Saint Lucia.</p>
+  <p class="footer-legal" style="margin-top:6px;">Built by <a href="https://www.instagram.com/jamalinks758" target="_blank" rel="noopener" style="color:rgba(0,194,209,0.6);text-decoration:none;">JAMALINKS</a> — Your Link to Your World</p>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════
+     WHATSAPP FAB
+═══════════════════════════════════════════ -->
+<a class="wa-fab" href="https://wa.me/17585182570?text=Hi%2C%20I%20want%20a%20quote%20for%20a%20security%20system." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="wa-fab-pulse"></div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script>
+// ── THEME TOGGLE ──
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+// Load light mode by default
+html.setAttribute('data-theme', 'light');
+
+toggle.addEventListener('click', () => {
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+});
+
+// ── CAROUSEL ──
+const track = document.getElementById('carouselTrack');
+const dots = document.querySelectorAll('.carousel-dot');
+let current = 0;
+const total = track.children.length;
+
+function goTo(index) {
+  current = (index + total) % total;
+  track.style.transform = `translateX(-${current * 100}%)`;
+  dots.forEach((d, i) => d.classList.toggle('active', i === current));
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.index)));
+
+// Auto-advance
+let autoSlide = setInterval(() => goTo(current + 1), 4500);
+track.parentElement.addEventListener('mouseenter', () => clearInterval(autoSlide));
+track.parentElement.addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => goTo(current + 1), 4500);
+});
+
+// Swipe support
+let touchStartX = 0;
+track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+track.addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+});
+
+// ── SCROLL REVEAL ──
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      entry.target.style.transitionDelay = (i % 4) * 0.08 + 's';
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// ── STABLE VIEWPORT ──
+// Prevent layout shift from mobile browser chrome resize
+let lastHeight = window.innerHeight;
+window.addEventListener('resize', () => {
+  if (Math.abs(window.innerHeight - lastHeight) > 100) return;
+  lastHeight = window.innerHeight;
+});
+
+// Prevent scrollbar jump
+document.documentElement.style.scrollbarGutter = 'stable';
+
+// ── LIVE TIMESTAMP ──
+function updateTimestamps() {
+  const now = new Date();
+  const t = now.toTimeString().slice(0,8);
+  document.querySelectorAll('.cam-timestamp').forEach(el => el.textContent = t);
+}
+setInterval(updateTimestamps, 1000);
+updateTimestamps();
+</script>
+
+<!-- Schema.org Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Neil's Tech Services",
+  "description": "Professional home and security company providing CCTV, alarms, door access control and device repair installation across Saint Lucia.",
+  "telephone": "+17585182570",
+  "email": "neilstechservices@gmail.com",
+  "url": "https://www.instagram.com/neils_tech_services",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Castries",
+    "addressRegion": "Saint Lucia",
+    "addressCountry": "LC"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Saint Lucia"
+  },
+  "sameAs": [
+    "https://www.instagram.com/neils_tech_services"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Security Installation Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CCTV Camera Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Alarm System Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Access Control"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Video Doorbell Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Device Repairs"}}
+    ]
+  }
+}
+</script>
+
+</body>
+</html>
