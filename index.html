@@ -14,7 +14,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
 <style>
 /* ============================================================
    DESIGN SYSTEM — NEIL'S TECH SERVICES
@@ -2566,25 +2567,49 @@ html, body {
       <div class="coverage-chip">+ All Districts</div>
     </div>
 
-    <div class="reveal" style="margin-top:60px;">
+  <div class="reveal" style="margin-top:60px;">
+  <div class="reveal" style="margin-top:60px;">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
-        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
-          <div style="font-size:24px;margin-bottom:10px;">📞</div>
-          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Phone</div>
-          <a href="tel:+17585182570" style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--text-main);text-decoration:none;">(758) 518-2570</a>
+        
+        <!-- Phone Card -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;transition:all 0.3s ease;">
+          <div style="font-size:32px;margin-bottom:12px;background:linear-gradient(135deg,var(--teal),var(--teal-dim));width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-left:auto;margin-right:auto;box-shadow:0 0 12px rgba(0,194,209,0.2);">
+            <i class="fas fa-phone-alt" style="color:white;font-size:24px;"></i>
+          </div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:11px;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;font-weight:700;">Phone</div>
+          <a href="tel:+17585182570" style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--text-main);text-decoration:none;transition:color 0.2s;">(758) 518-2570</a>
         </div>
-        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
-          <div style="font-size:24px;margin-bottom:10px;">📧</div>
-          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Email</div>
-          <a href="/cdn-cgi/l/email-protection#137d767a7f606776707b607661657a70766053747e727a7f3d707c7e" style="font-weight:600;font-size:15px;color:var(--text-main);text-decoration:none;word-break:break-all;"><span class="__cf_email__" data-cfemail="c0aea5a9acb3b4a5a3a8b3a5b2b6a9a3a5b380a7ada1a9aceea3afad">neilstechservices@gmail.com</span></a>
+
+        <!-- Email Card -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;transition:all 0.3s ease;">
+          <div style="font-size:32px;margin-bottom:12px;background:linear-gradient(135deg,var(--teal),var(--teal-dim));width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-left:auto;margin-right:auto;box-shadow:0 0 12px rgba(0,194,209,0.2);">
+            <i class="fas fa-envelope" style="color:white;font-size:22px;"></i>
+          </div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:11px;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;font-weight:700;">Email</div>
+          <a href="mailto:neilstechservices@gmail.com?subject=Security%20System%20Quote%20Request&body=Hi%20Neil's%20Tech%20Services%2C%0D%0A%0D%0AI'm%20interested%20in%20getting%20a%20quote%20for%20a%20security%20system.%20Here%20are%20my%20details%3A%0D%0A%0D%0ALocation%3A%20%0D%0AType%20of%20property%3A%20%0D%0ANumber%20of%20cameras%2Fsystem%20needed%3A%20%0D%0A%0D%0AThank%20you!" style="font-weight:600;font-size:15px;color:var(--text-main);text-decoration:none;word-break:break-all;transition:color 0.2s;display:inline-block;">neilstechservices@gmail.com</a>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">Click to open email client</div>
         </div>
-        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;">
-          <div style="font-size:24px;margin-bottom:10px;">📸</div>
-          <div style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Instagram</div>
-          <a href="https://www.instagram.com/neils_tech_services" target="_blank" rel="noopener" style="font-size:15px;color:var(--teal);text-decoration:none;font-weight:600;">@neils_tech_services</a>
+
+        <!-- Instagram Card -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;transition:all 0.3s ease;">
+          <div style="font-size:32px;margin-bottom:12px;background:linear-gradient(135deg,var(--teal),var(--teal-dim));width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-left:auto;margin-right:auto;box-shadow:0 0 12px rgba(0,194,209,0.2);">
+            <i class="fab fa-instagram" style="color:white;font-size:24px;"></i>
+          </div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:11px;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;font-weight:700;">Instagram</div>
+          <a href="https://www.instagram.com/neils_tech_services" target="_blank" rel="noopener" style="font-size:15px;color:var(--teal);text-decoration:none;font-weight:600;transition:opacity 0.2s;display:inline-block;">@neils_tech_services</a>
         </div>
+
+        <!-- Facebook Card (NEW) -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;transition:all 0.3s ease;">
+          <div style="font-size:32px;margin-bottom:12px;background:linear-gradient(135deg,var(--teal),var(--teal-dim));width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-left:auto;margin-right:auto;box-shadow:0 0 12px rgba(245,158,11,0.2);">
+            <i class="fab fa-facebook-f" style="color:white;font-size:24px;"></i>
+          </div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:11px;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;font-weight:700;">Facebook</div>
+          <a href="https://www.facebook.com/share/1B7RGnvnCr/" target="_blank" rel="noopener" style="font-size:15px;color:var(--teal);text-decoration:none;font-weight:600;transition:opacity 0.2s;display:inline-block;">Neil's Tech Services</a>
+        </div>
+
       </div>
-    </div>
+  </div>
   </div>
 </section>
 
