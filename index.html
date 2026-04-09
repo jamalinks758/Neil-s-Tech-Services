@@ -210,7 +210,7 @@ body::before {
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
-  background: var(--bg-hero);
+  background: url('images/commercial-cctv-system-01.webp') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -219,15 +219,19 @@ body::before {
 }
 
 /* animated camera grid bg */
-.hero-bg {
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(0,194,209,0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(245,158,11,0.05) 0%, transparent 60%);
+  background: linear-gradient(
+    135deg,
+    rgba(13,27,46,0.93) 0%,
+    rgba(13,27,46,0.78) 55%,
+    rgba(13,27,46,0.55) 100%
+  );
+  z-index: 1;
 }
-
-.hero-grid {
+   
+   .hero-grid {
   position: absolute;
   inset: 0;
   background-image:
@@ -235,6 +239,7 @@ body::before {
     linear-gradient(90deg, rgba(0,194,209,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  z-index: 1;  /* ADD THIS LINE */
 }
 
 /* camera HUD corners */
@@ -287,6 +292,8 @@ body::before {
   gap: 60px;
   align-items: center;
 }
+
+   
 
 @media(max-width:768px) {
   .hero-inner {
@@ -1835,8 +1842,8 @@ html, body {
      HERO
 ═══════════════════════════════════════════ -->
 <section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
+ <div class="hero-overlay"></div>
+<div class="hero-grid"></div>
 
   <div class="hud-corner hud-corner--tl"></div>
   <div class="hud-corner hud-corner--tr"></div>
