@@ -801,6 +801,34 @@ body::before {
   gap: 14px;
 }
 
+   .svc-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  z-index: 0;
+}
+
+.svc-card-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.88);
+  border-radius: 18px;
+}
+
+[data-theme="dark"] .svc-card-bg::after {
+  background: rgba(13,27,46,0.88);
+}
+
+/* Ensure all card content sits above the background */
+.svc-card > *:not(.svc-card-bg) {
+  position: relative;
+  z-index: 1;
+}
+
 /* Feature card — large spans 2 cols */
 .svc-card.featured {
   grid-column: span 2;
@@ -2052,6 +2080,8 @@ html, body {
       <!-- FEATURED: Security Systems spans full width -->
       <div class="svc-card featured reveal">
         <div class="svc-featured-left">
+            <div class="svc-card-bg" style="background-image:url('images/server-rack-install-01.webp');"></div>
+  
           <div class="svc-icon-wrap teal-bg">
             <svg viewBox="0 0 24 24" fill="#00c2d1"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
           </div>
@@ -2060,6 +2090,8 @@ html, body {
           <span class="svc-pill">Most Popular</span>
         </div>
         <div class="svc-featured-right">
+            <div class="svc-card-bg" style="background-image:url('images/server-rack-install-01.webp');"></div>
+  
           <p style="font-family:'Rajdhani',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:4px;">What's included</p>
           <ul class="svc-feature-list">
             <li>HD & 4K Camera Installation</li>
@@ -2078,6 +2110,7 @@ html, body {
 
       <!-- Access & Networking -->
       <div class="svc-card reveal">
+          <div class="svc-card-bg" style="background-image:url('images/server-rack-install-01.webp');"></div>
         <div class="svc-icon-wrap amber-bg">
           <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
         </div>
