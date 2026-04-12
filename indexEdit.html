@@ -849,7 +849,6 @@ body::before {
   cursor: default;
   display: flex;
   flex-direction: column;
-  gap: 14px;
 }
 
    .svc-card-bg {
@@ -896,11 +895,18 @@ body::before {
 
 /* Darker text for readability over the light overlay */
 .svc-card h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
   color: #0d1b2e;
+  letter-spacing: 0.3px;
 }
 
 .svc-card p {
+  font-size: 14px;
   color: #1e3a52;
+  line-height: 1.7;
+  flex: 1;
 }
 
 [data-theme="dark"] .svc-card h3 { color: #ffffff; }
@@ -978,21 +984,6 @@ body::before {
   border: 1px solid rgba(37,211,102,0.25);
 }
 
-.svc-card h3 {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text-main);
-  letter-spacing: 0.3px;
-}
-
-.svc-card p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.7;
-  flex: 1;
-}
-
 .svc-pill {
   display: inline-flex;
   align-items: center;
@@ -1020,6 +1011,8 @@ body::before {
   flex-direction: column;
   gap: 14px;
   border-right: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
 }
 
 .svc-featured-right {
@@ -1029,6 +1022,8 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(0,194,209,0.04), transparent);
   gap: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .svc-feature-list {
@@ -1053,6 +1048,16 @@ body::before {
   border-radius: 50%;
   background: var(--teal);
   flex-shrink: 0;
+}
+
+   .svc-card-wide {
+  grid-column: span 2;
+}
+
+@media(max-width:640px) {
+  .svc-card-wide {
+    grid-column: span 1;
+  }
 }
 
 /* big decorative icon on svc cards */
@@ -2222,7 +2227,7 @@ html, body {
   </div>
 
   <!-- Home Services -->
-  <div class="svc-card reveal" style="display:flex;flex-direction:column;justify-content:space-between;min-height:320px;grid-column:span 2;">
+ <div class="svc-card svc-card-wide reveal" style="display:flex;flex-direction:column;justify-content:space-between;min-height:320px;">
     <div class="svc-card-bg" style="background-image:url('images/tiling-work-done-01.webp');"></div>
     <!-- TOP: text content -->
     <div style="position:relative;z-index:1;">
