@@ -862,23 +862,49 @@ body::before {
   z-index: 0;
 }
 
+/* REPLACE WITH: */
 .svc-card-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.88);
   border-radius: 18px;
+  /* Fade: solid at top (text area), transparent at bottom (image shows) */
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.97) 0%,
+    rgba(255,255,255,0.97) 52%,
+    rgba(255,255,255,0.55) 72%,
+    rgba(255,255,255,0.10) 100%
+  );
 }
 
 [data-theme="dark"] .svc-card-bg::after {
-  background: rgba(13,27,46,0.88);
+  background: linear-gradient(
+    to bottom,
+    rgba(13,27,46,0.97) 0%,
+    rgba(13,27,46,0.97) 52%,
+    rgba(13,27,46,0.55) 72%,
+    rgba(13,27,46,0.10) 100%
+  );
 }
 
-/* Ensure all card content sits above the background */
+/* All card content sits above the background */
 .svc-card > *:not(.svc-card-bg) {
   position: relative;
   z-index: 1;
 }
+
+/* Darker text for readability over the light overlay */
+.svc-card h3 {
+  color: #0d1b2e;
+}
+
+.svc-card p {
+  color: #1e3a52;
+}
+
+[data-theme="dark"] .svc-card h3 { color: #ffffff; }
+[data-theme="dark"] .svc-card p  { color: #c8dde8; }
 
 /* Feature card — large spans 2 cols */
 .svc-card.featured {
@@ -2134,82 +2160,84 @@ html, body {
 </div>
 
      
-    <div class="services-mosaic">
+  <div class="services-mosaic">
 
-      <!-- FEATURED: Security Systems spans full width -->
-      <div class="svc-card featured reveal">
-         <div class="svc-card-bg" style="background-image:url('images/security-camera-outside-setup-01.webp');"></div>
-        <div class="svc-featured-left">
-   
-          <div class="svc-icon-wrap teal-bg">
-            <svg viewBox="0 0 24 24" fill="#00c2d1"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
-          </div>
-          <h3>Security Systems</h3>
-          <p>CCTV cameras, alarm systems, remote monitoring, video doorbells. HD to 4K resolution. Night vision. AI motion detection.</p>
-          <span class="svc-pill">Most Popular</span>
-        </div>
-        <div class="svc-featured-right">      
-  
-          <p style="font-family:'Rajdhani',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:4px;">What's included</p>
-          <ul class="svc-feature-list">
-            <li>HD & 4K Camera Installation</li>
-            <li>Night Vision — 24/7 Coverage</li>
-            <li>Alarm System Setup & Testing</li>
-            <li>Remote Phone Access Configured</li>
-            <li>Video Doorbell Systems</li>
-            <li>AI Motion Detection</li>
-          </ul>
-        </div>
-        <!-- deco icon -->
-        <div class="svc-deco">
-          <svg width="160" height="160" viewBox="0 0 24 24" fill="var(--teal)"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
-        </div>
+  <!-- FEATURED: Security Systems spans full width -->
+  <div class="svc-card featured reveal">
+    <div class="svc-card-bg" style="background-image:url('images/security-camera-outside-setup-01.webp');"></div>
+    <div class="svc-featured-left">
+      <div class="svc-icon-wrap teal-bg">
+        <svg viewBox="0 0 24 24" fill="#00c2d1"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
       </div>
-
-      <!-- Access & Networking -->
-      <div class="svc-card reveal">
-          <div class="svc-card-bg" style="background-image:url('images/reolink-door-access-network-system.webp');"></div>
-        <div class="svc-icon-wrap amber-bg">
-          <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-        </div>
-        <h3>Access & Networking</h3>
-        <p>Door access control, structured cabling, rack installations. Secure your entry points with smart card or PIN access.</p>
-        <span class="svc-pill">Commercial & Home</span>
-        <div class="svc-deco">
-          <svg width="130" height="130" viewBox="0 0 24 24" fill="var(--amber)"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-        </div>
-      </div>
-
-      <!-- Device Repairs -->
-      <div class="svc-card reveal">
-         <div class="svc-card-bg" style="background-image:url('images/tv-being-repaired-01.webp');"></div>
-        <div class="svc-icon-wrap orange-bg">
-          <svg viewBox="0 0 24 24" fill="#f97316"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
-        </div>
-        <h3>Device Repairs</h3>
-        <p>TVs, phones, tablets, and computers. Fast turnaround, honest diagnosis, quality parts.</p>
-        <span class="svc-pill">Quick Turnaround</span>
-        <div class="svc-deco">
-          <svg width="130" height="130" viewBox="0 0 24 24" fill="var(--orange-logo)"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
-        </div>
-      </div>
-
-      <!-- Home Services -->
-      <div class="svc-card reveal">
-         <div class="svc-card-bg" style="background-image:url('images/tiling-work-done-01.webp');"></div>
-        <div class="svc-icon-wrap green-bg">
-          <svg viewBox="0 0 24 24" fill="#25D366"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        </div>
-        <h3>Home Services</h3>
-        <p>Tiling and finishing work. Precision installation from a team that respects your property.</p>
-        <span class="svc-pill">Quality Finish</span>
-        <div class="svc-deco">
-          <svg width="130" height="130" viewBox="0 0 24 24" fill="#25D366"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        </div>
-      </div>
-
+      <h3>Security Systems</h3>
+      <p>CCTV cameras, alarm systems, remote monitoring, video doorbells. HD to 4K resolution. Night vision. AI motion detection.</p>
+      <span class="svc-pill">Most Popular</span>
+    </div>
+    <div class="svc-featured-right">
+      <p style="font-family:'Rajdhani',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:4px;">What's included</p>
+      <ul class="svc-feature-list">
+        <li>HD & 4K Camera Installation</li>
+        <li>Night Vision — 24/7 Coverage</li>
+        <li>Alarm System Setup & Testing</li>
+        <li>Remote Phone Access Configured</li>
+        <li>Video Doorbell Systems</li>
+        <li>AI Motion Detection</li>
+      </ul>
+    </div>
+    <div class="svc-deco">
+      <svg width="160" height="160" viewBox="0 0 24 24" fill="var(--teal)"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
     </div>
   </div>
+
+  <!-- Access & Networking -->
+  <div class="svc-card reveal" style="display:flex;flex-direction:column;justify-content:space-between;min-height:320px;">
+    <div class="svc-card-bg" style="background-image:url('images/reolink-door-access-network-system.webp');"></div>
+    <!-- TOP: text content -->
+    <div style="position:relative;z-index:1;">
+      <div class="svc-icon-wrap amber-bg" style="margin-bottom:14px;">
+        <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+      </div>
+      <h3>Access & Networking</h3>
+      <p>Door access control, structured cabling, rack installations. Secure your entry points with smart card or PIN access.</p>
+      <span class="svc-pill">Commercial & Home</span>
+    </div>
+    <!-- BOTTOM: spacer so image bleeds through at the bottom -->
+    <div style="height:80px;position:relative;z-index:1;"></div>
+  </div>
+
+  <!-- Device Repairs -->
+  <div class="svc-card reveal" style="display:flex;flex-direction:column;justify-content:space-between;min-height:320px;">
+    <div class="svc-card-bg" style="background-image:url('images/tv-being-repaired-01.webp');"></div>
+    <!-- TOP: text content -->
+    <div style="position:relative;z-index:1;">
+      <div class="svc-icon-wrap orange-bg" style="margin-bottom:14px;">
+        <svg viewBox="0 0 24 24" fill="#f97316"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+      </div>
+      <h3>Device Repairs</h3>
+      <p>TVs, phones, tablets, and computers. Fast turnaround, honest diagnosis, quality parts.</p>
+      <span class="svc-pill">Quick Turnaround</span>
+    </div>
+    <!-- BOTTOM: spacer -->
+    <div style="height:80px;position:relative;z-index:1;"></div>
+  </div>
+
+  <!-- Home Services -->
+  <div class="svc-card reveal" style="display:flex;flex-direction:column;justify-content:space-between;min-height:320px;grid-column:span 2;">
+    <div class="svc-card-bg" style="background-image:url('images/tiling-work-done-01.webp');"></div>
+    <!-- TOP: text content -->
+    <div style="position:relative;z-index:1;">
+      <div class="svc-icon-wrap green-bg" style="margin-bottom:14px;">
+        <svg viewBox="0 0 24 24" fill="#25D366"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      </div>
+      <h3>Home Services</h3>
+      <p>Tiling and finishing work. Precision installation from a team that respects your property.</p>
+      <span class="svc-pill">Quality Finish</span>
+    </div>
+    <!-- BOTTOM: spacer -->
+    <div style="height:80px;position:relative;z-index:1;"></div>
+  </div>
+
+</div>
 </section>
 
 <div class="teal-rule"></div>
